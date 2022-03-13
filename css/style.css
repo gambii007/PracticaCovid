@@ -1,0 +1,95 @@
+/**=================Fuentes==========================*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+/**=================Body==========================*/
+body{
+    background: #F4F7FB;
+}
+/**=================Spin1==========================*/
+.cabezera h2, .txt h2{
+    color: blue;
+}
+
+.cabezera p, .txt p{
+    color: gray;
+}
+
+.cabezera{
+    display: flex;
+    width: 95%;
+    justify-content: space-around;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    margin: 10px;
+}
+
+.cuerpo1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cuerpo1 .txt{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.cuerpo1 .options{
+    display: flex;
+    margin-left: 150px;
+    justify-content: center;
+}
+
+.cuerpo1 h2{
+    font-weight: bold;
+    font-size: 75px;
+}
+
+.cuerpo1 p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cuerpo1 img{
+    margin: 5px;
+    background: peru;
+}
+.cuerpo1 .option{
+    margin: 10px;
+}
+
+.ubicacion{
+    background: white;
+    width: 90%;
+    box-shadow: 3px 7px 5px 0px rgba(206,201,242,1);
+    opacity: 0.5;
+    margin: auto;
+}
+
+.requisitos{
+    display: inline-grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 0;
+    align-items: center;
+}
+.three{
+    grid-column: 2;
+    grid-row: 1;
+}
+.four{
+    grid-column: 2;
+    grid-row: 2;
+}
+.five{
+    grid-column: 3;
+    grid-row: 1;
+}
+.six{
+    grid-column: 3;
+    grid-row: 2;
+}
