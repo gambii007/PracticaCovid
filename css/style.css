@@ -5,18 +5,8 @@ body{
     background: #F4F7FB;
 }
 /**=================Spin1==========================*/
-.snap-container{
-    height: 100vh;
-    overflow: auto;  
-    scroll-snap-type: y mandatory;  
-}
-
-.snap-section{
-    scroll-snap-align: start;
-    min-height: 60vh;
-}
-/**=================Spin1==========================*/
-.cabezera h2, .txt h2{
+/**=================Cabecera==========================*/
+.cabezera h2, .txt h2, a{
     color: blue;
 }
 
@@ -25,10 +15,14 @@ body{
 }
 
 .cabezera{
+    position: fixed;
     display: flex;
     width: 95%;
     justify-content: space-around;
     margin: -15px auto;
+    top: 0;
+    left: 0;
+    background: #F4F7FB;
 }
 
 .options{
@@ -37,12 +31,23 @@ body{
     justify-content: space-around;
     width: 50%;
 }
+
+.cabezera a:hover{
+    background: #4F95FC;
+    color: white;
+    border-radius: 5px;
+}
+
+.cabezera a:link, a:visited, a:active {
+    text-decoration:none;
+}
 /**=================Cuerpo1==========================*/
 .cuerpo1{
     display: flex;
     justify-content: space-around;
     width: 91%;
     margin: auto;
+    margin-top: 50px;
 }
 
 .cuerpo1 .txt{
@@ -66,14 +71,9 @@ body{
 }
 
 .cuerpo1 .options img{
-    background: peru;
     margin-left: 25px;
 }
 
-.cuerpo1 .img img{
-    transform: scale(.75, .75);
-    margin: -60px auto;
-}
 /**=================Cita==========================*/
 .ubicacion{
     background: white;
@@ -186,7 +186,6 @@ body{
 .spin3{
     display: flex;
     width: auto;
-    margin-top: 50px;
     align-items: center;
 }
 
@@ -203,6 +202,7 @@ body{
     font-weight: bold;
     font-size: 75px;
     color: blue;
+    margin-bottom: 0;
 }
 
 .info_preparate p{
@@ -249,7 +249,6 @@ body{
     display: inline-grid;
     grid-template-columns: repeat(2, 2fr);
     margin-left: 100px;
-    background-color: #DFEAFA;
     gap: 50px;
     text-align: center;
     border-radius: 10px;
@@ -259,6 +258,24 @@ body{
     color: #08418E;
 }
 
+.euno, .edos, .etres, .ecuatro{
+    box-shadow: 0px 0px 26px 8px rgba(85,121,230,1);
+}
+
+.emergencia p{
+    width: 80%;
+    color: blue;
+    padding: 5px;
+    background: #ACC1FF;
+    border-radius: 4px;
+    margin: 10px auto;
+}
+
+.emergencia p:hover{
+    background: blue;
+    color: white;
+    cursor: pointer;
+}
 /**=================Footer==========================*/
 .about{
     display: flex;
